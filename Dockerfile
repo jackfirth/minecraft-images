@@ -13,4 +13,4 @@ ENV VERSION 1.8.8
 RUN wget --no-check-certificate https://s3.amazonaws.com/Minecraft.Download/versions/${VERSION}/${VERSION}.jar -P ~/.minecraft/versions/${VERSION}/
 
 ENTRYPOINT ["overviewer.py"]
-CMD ["/minecraft/world", "/usr/share/nginx/html"]
+CMD ["/data/world", "/usr/share/nginx/html"]
